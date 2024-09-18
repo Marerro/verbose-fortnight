@@ -40,7 +40,6 @@ li a {
     font-family: "Noto Sans", sans-serif;
     font-weight:600;
     height:100%;
-    transition: .6s;
     padding:50px;
 }
 
@@ -73,14 +72,17 @@ li a {
 }
 
 .projects {
+    display:flex;
+    align-items:center;
+    flex-direction:column;
     height:100vh; 
     background-color:#45567d;
 }
 
 .project__subtitle {
-    display:flex;
-    justify-content:center;
     padding-top:120px;
+    text-align:center;
+    padding-bottom:50px;
 }
 
 .project__subtitle h1 {
@@ -92,4 +94,44 @@ li a {
     border-bottom:0.2rem solid;
     border-collapse: collapse;
     padding-bottom:40px;
+}
+
+.portfolio {
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+
+.portfolio__body img {
+    display:block;
+    width:350px;
+    height:350px;
+}
+
+.portfolio__description {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:#383838;
+    height:60px;
+}
+
+.portfolio__description h3 {
+    margin: 0; 
+    color:#FFF;
+    font-family:"Inter", system-ui;
+    font-weight:300;
+
+}
+
+.port {
+    display:flex;
+    gap:20px;
+    padding-bottom:30px;
+}
+
+.port1 {
+    display:flex;
+    gap:20px;
 }
