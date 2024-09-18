@@ -8,40 +8,32 @@ nav {
     background: linear-gradient(0deg, rgba(149,10,15,1) 0%, rgba(158,4,9,1) 100%);
     opacity:0.8;
     height:100px;
-    display:flex;
-    flex-direction:row;
-    justify-content:flex-end;
-    align-items:center;
     border-bottom: 1px solid rgb(7, 7, 7);
 }
 
-ul {
-
-    margin: 0;
-    list-style-type:none;
-    display:inline-block;
-    padding:70px;
+.nav__body {
+    display:flex;
+    justify-content:flex-end;
+    height:100%;
+    padding-right: 50px;
 }
 
-nav li {
-    display:inline-block;
-}
-
-nav li:hover {
+nav a:hover {
     background-color:#383838;
 }
 
-li a {
-    display:inline-block;
+nav a {
+    display:flex;
+    align-items:center;
     text-decoration:none;
+    padding:0 15px;
     color:inherit;
     color:#FFF;
     font-size:2rem;
     font-family: "Noto Sans", sans-serif;
     font-weight:600;
     height:100%;
-    padding:50px;
-}
+} 
 
 .title {
     display:flex;
@@ -101,6 +93,10 @@ li a {
     flex-direction: row;
     align-items:center;
     justify-content:center;
+}
+
+.portfolio__body:hover {
+    cursor:pointer;
 }
 
 .portfolio__body img {
@@ -180,6 +176,72 @@ footer {
     height:70vh;
     background-color:#383838;
     display:flex;
-    justify-content:center;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
+    border-bottom:5px solid rgb(168, 4, 4);
+}
+
+.footer__body h1{
+    font-size:4rem;
+    color:#FFF;
+    font-family:"Inter", sans-serif;
+    font-weight:600;
+    margin:0.6rem;
+    text-align:center;
+}
+
+.footer__body h3 {
+    font-size:1.3rem;
+    color:#FFF;
+    font-family:"Inter", sans-serif;
+    font-weight:200;
+    font-style:italic;
+    margin:0;
+    text-align:center;
+    padding-bottom:45px;
+}
+
+.footer__image {
+    width:30px;
+    height:30px;
+}
+
+.footer__links {
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.footer__links a {
+    font-size:1.7rem;
+    color:#FFF;
+    text-decoration:none;
+    font-family:"Work Sans", sans-serif;
+    font-weight:300;
+}
+
+.footer__bottom {
+    height:10vh;
+    background-color:#383838;
+}
+
+.footer__content {
+    height:10vh;
+    background-color:#383838;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.footer__content p {
+    text-align:center;
+    color:#FFF;
+    font-size:1.6rem;
+    font-family:"Work Sans", sans-serif;
+    font-weight:400;
+}
+
+.link:hover, .link1:hover, .link2:hover, .link3:hover, .link4:hover{
+    transition: 0.3s ease-out;
+    transform: translate(0rem, 1rem);
 }
